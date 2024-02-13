@@ -1,0 +1,72 @@
+.calculator {
+  width: 400px; /* Decreased width slightly */
+  height: 550px; /* Decreased height slightly */
+  margin: 50px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #000000;
+  box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 2);
+}
+
+body{
+background-image: url('./calculatorbg1.jpg');
+background-size: cover; /* Adjust the value as needed */
+padding: auto;
+}
+
+
+#display {
+  width: calc(100% - 22px); /* Adjusted display width to accommodate padding and border */
+  height: 60px; /* Kept the increased height of the display */
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: #5b6d7c;
+  border: 2px solid rgb(37, 37, 37);
+  border-radius: 8px;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  width: 90px; /* Reduced width of the buttons */
+  height: 90px; /* Reduced height of the buttons */
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #25292c;
+  text-align: center;
+  color: #fdf035 ;
+}
+
+.operator {
+  background-color: #25292c;
+  color: white;
+}
+
+.number {
+  background-color: #13171d;
+  color: white;
+}
+
+button:hover {
+  background-color: #8c8c8c;
+}
+
+button:active {
+  background-color: #8c8c8c;
+}
+
+#calculate {
+  grid-column: span 2; /* Adjusted to make the button span two columns */
+  width: calc((90px * 2) + 5px); /* Adjusted width to span two buttons plus grid gap */
+  
+    background-color: #e74c3c; /* New background color */
+    color: white; /* New text color */
+  
+  
+}
